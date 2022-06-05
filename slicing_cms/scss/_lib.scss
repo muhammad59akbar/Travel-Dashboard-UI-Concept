@@ -1,0 +1,126 @@
+
+/* Font Montserrat Medium */
+@font-face{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gTD_vx3rCubqg.woff2) format('woff2');
+  src: local('Montserrat Medium'), local('Montserrat-Medium');
+  src: url('Montserrat-Medium.woff2') format('woff2');
+  src: url('fonts/Montserrat-Medium.ttf') format('ttf');
+}
+
+/* Font Montserrat Semi Bold */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gTD_vx3rCubqg.woff2) format('woff2');
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold');
+  src: url('Montserrat-SemiBold.woff2') format('woff2');
+  src: url('fonts/Montserrat-SemiBold.ttf') format('ttf');
+}
+
+/* --------- FONT --------- */
+$font-default: 500 14px/130% 'Montserrat Medium', helvetica, arial, sans-serif, ;
+$font-bold: 600 14px/130% 'Montserrat SemiBold', helvetica, arial, sans-serif, ;
+/* --------- END FONT --------- */
+
+/* --------- COLOR --------- */
+$white:#ffffff;
+
+$black-1:#000;
+$black-2:#393D46;
+$black-3:#3E3C50;
+$black-4: #7987A5;
+$black-5: #B0B1BB;
+$black-6: #1C295D;
+$black-7 : #010101;
+
+$grey-1: #F6F7FB;
+$grey-2:#353646;
+
+$orange: #FF6647;
+/* --------- END COLOR --------- */
+
+
+/* --------- VAR --------- */
+
+/* --------- MIXIN FONT FAMILY --------- */
+@mixin font-family(){
+   
+}
+
+/* --------- END VAR --------- */
+
+/* --------- MIXIN BORDER --------- */
+@mixin border($jumlah){
+  border-radius: $jumlah;
+  -webkit-border-radius: $jumlah;
+  -moz-border-radius: $jumlah;
+}
+/* --------- End MIXIN BORDER --------- */
+
+/* --------- ICON --------- */
+
+.icn{
+  .icn-24{width: 24px; height: 24px; overflow: hidden; margin: auto;}
+  &:hover .icn-24{background-position:24px;}
+}
+
+
+/* --------- END ICON --------- */
+
+
+/*GLOBAL RESET*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%;  vertical-align:baseline; background:transparent;}        
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section { display:block; box-sizing: border-box; }ul, ol { list-style:none; }
+blockquote, q { quotes:none; } blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+ins { background-color:#ff9; color:#000; text-decoration:none; } mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } del { text-decoration: line-through; } abbr[title], dfn[title] { /*border-bottom:1px dotted;*/ cursor:help; } table { border-collapse:collapse; border-spacing:0; } hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+ul, ol { /*margin-left: 1.8em;*/ } ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; }  small { font-size: 85%; } strong, th { font-weight: bold; } td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; } sup { vertical-align: super; font-size: smaller; }
+pre { padding: 15px; } pre, code { white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ word-wrap: break-word; /* IE */}
+input, select { vertical-align:middle; } .ie6 input { vertical-align: text-bottom; } textarea { overflow: auto; } input[type="radio"] { vertical-align: text-bottom; } input[type="checkbox"] { vertical-align: bottom; } .ie7 input[type="checkbox"] { vertical-align: baseline; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:invalid, textarea:invalid {      border-radius: 1px;   -moz-box-shadow: 0px 0px 5px red;  -webkit-box-shadow: 0px 0px 5px red;    box-shadow: 0px 0px 5px red;}
+.ie7 img { -ms-interpolation-mode: bicubic; }
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.clearfix:before, .clearfix:after {content: "\0020"; display: block; height: 0; visibility: hidden;  } .clearfix:after { clear: both; } .clearfix { zoom: 1; }
+img {border:0; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; cursor:pointer; color:$black-2; } a:link , a:hover , a:visited{text-decoration:none;outline: none;  } a:link { -webkit-tap-highlight-color: none; } 
+
+body{   font: $font-default; 
+      padding: 0; 
+      margin: 0 auto;
+      width: 100%; 
+      box-sizing: border-box; 
+      background:#fff; 
+      line-height:130%; 
+      display: flex; 
+      flex-direction: row;
+  }
+
+/*grid*/
+.grid{
+  position: relative; box-sizing: border-box; display: flex;  flex-direction: row;
+  &.center{margin:0 auto; box-sizing: border-box;}
+  &.col{width: 100%;}
+}
+
+
+
+
+/*floats and clearing*/
+.fL{float: left;} .fR{float: right;}
+.clearfix:before, .clearfix:after {content: "\0020"; display: block; height: 0; visibility: hidden;  } .clearfix:after { clear: both; } .clearfix { zoom: 1; }
+.break{clear: both; font-size: 0; height:1%; width:100%;}
+.break.h2{height:2px;} .break.h5{height:5px;} .break.h10{height:10px;} .break.h15{height:15px;} .break.h20{height:20px;} .break.h25{height:25px;} .break.h30{height:30px;} .break.h40{height:40px;} .break.h50{height:50px;} .break.h60{height:60px;}
+
+
+h1, h2, h3, h4, h5, h6 { font-weight:normal;  display:inline; font-size:100%; text-decoration:none;} 
+
+/* ------------------------- GLOBAL STYLE ------------------------------------*/
